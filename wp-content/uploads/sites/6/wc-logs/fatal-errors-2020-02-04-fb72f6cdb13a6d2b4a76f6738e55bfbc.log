@@ -1,0 +1,12 @@
+2020-02-04T13:02:33+00:00 CRITICAL Uncaught Error: Call to undefined function evential_categorized_blog() in /var/www/gain.adventistas.org/www/wp-content/themes/thema-evential/content.php:16
+Stack trace:
+#0 /var/www/gain.adventistas.org/www/wp-includes/template.php(690): require()
+#1 /var/www/gain.adventistas.org/www/wp-includes/template.php(647): load_template('/var/www/gain.a...', false)
+#2 /var/www/gain.adventistas.org/www/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /var/www/gain.adventistas.org/www/wp-content/themes/thema-evential/author.php(55): get_template_part('content', '')
+#4 /var/www/gain.adventistas.org/www/wp-includes/template-loader.php(74): include('/var/www/gain.a...')
+#5 /var/www/gain.adventistas.org/www/wp-blog-header.php(19): require_once('/var/www/gain.a...')
+#6 /var/www/gain.adventistas.org/www/index.php(17): require('/var/www/gain.a...')
+#7 {main}
+  thrown in /var/www/gain.adventistas.org/www/wp-content/themes/thema-evential/content.php on line 16
+

@@ -1,0 +1,124 @@
+/*
+Theme Name: GAiN 2016 - Evential Child
+Description: Personalização do tema Evential para o evento GAiN 2016.
+Author: 
+Template: thema-evential
+Version: 1.0.0
+Text Domain: evential
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+
+footer {
+	padding: 50px 0;
+	background: #192930;
+	color: #fff;
+}
+
+.logo {
+	margin-bottom: 20px;
+}
+
+.single-product label {
+	color: #2e2e2e;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.page-template-page-WooCommerce #about {
+	padding: 0;
+}
+
+.page-template-page-WooCommerce .empty-image {
+	margin: 80px 0 0 0;
+}
+
+.product .blog-all article p {
+	margin-top: 20px;
+}
+
+.woocommerce table.shop_attributes {
+	margin-top: 20px;
+}
+
+.single-product.woocommerce .woocommerce-message {
+	margin-bottom: 70px !important;
+	border-top-color: #AE1B1B;
+	background-color: #E67878;
+	color: #FFFFFF;
+	line-height: 27px;
+}
+
+.woocommerce .woocommerce-message:before {
+	color: #FFFFFF;
+	font-size: 17px;
+	top: none;
+}
+
+.page-template-page-live {
+	background: #353535;
+}
+
+.page-template-page-live .blog-all article {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.page-template-page-live .empty-image  {
+	margin: 0;
+}
+
+.page-template-page-live .empty-image  {
+	margin: 0;
+}
+
+.page-template-page-live .blog-all iframe {
+	border: none;
+}
+
+.page-template-page-live .videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.page-template-page-live .videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.page-template-page-live #top h2 {
+	margin-top: 70px;
+}
+
+.page-template-page-live .galeria {
+	margin-top: 50px;
+	color: white;
+}
+
+.page-template-page-live .galeria a {
+	color: white;
+}
+
+.page-template-page-live .galeria .video{
+	margin-top: 20px;
+}
+
+#html5-watermark {
+	display: none !important;
+}
+
+.page-template-page-live .wplightbox {
+	min-height: 200px;
+}
+
+
+

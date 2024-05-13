@@ -1,0 +1,16 @@
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/blog/] Connecting to 127.0.0.1 ...
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/blog/] PURGE /2016/blog/ HTTP/1.1
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/blog/] Host: gain.adventistas.org
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/blog/] PURGE OK
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/feed/] Connecting to 127.0.0.1 ...
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/feed/] PURGE /2016/feed/ HTTP/1.1
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/feed/] Host: gain.adventistas.org
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/feed/] PURGE OK
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/ao-vivo/] Connecting to 127.0.0.1 ...
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/ao-vivo/] PURGE /2016/ao-vivo/ HTTP/1.1
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/ao-vivo/] Host: gain.adventistas.org
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/2016/ao-vivo/] PURGE OK
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/([a-z0-9_\-]*?)sitemap([a-z0-9_\-]*)?\.xml] Connecting to 127.0.0.1 ...
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/([a-z0-9_\-]*?)sitemap([a-z0-9_\-]*)?\.xml] PURGE /([a-z0-9_\-]*?)sitemap([a-z0-9_\-]*)?\.xml HTTP/1.1
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/([a-z0-9_\-]*?)sitemap([a-z0-9_\-]*)?\.xml] Host: gain.adventistas.org
+[Fri, 01 Jul 2016 15:37:18 +0000] [http://gain.adventistas.org/([a-z0-9_\-]*?)sitemap([a-z0-9_\-]*)?\.xml] PURGE OK

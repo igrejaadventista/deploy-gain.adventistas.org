@@ -1,0 +1,1 @@
+return array('Gain.adventistas.org/2016/ao-vivo' => 'm2', 'Gain.adventistas.org/robots.txt' => 'm1', 'gain.adventistas.org/2016' => 'm2', 'gain.adventistas.org' => 'm1');

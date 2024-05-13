@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# Passar o cabeçalho Authorization para o PHP como HTTP_AUTHORIZATION
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+RewriteBase /
+
+# Se estiver acessando index.php diretamente, interrompa o processamento de regras adicionais
+RewriteRule ^index\.php$ - [L]
+
+# Adicionar barra final a /wp-admin
+RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+
+# Se o arquivo ou diretório solicitado existir, pare o processamento de regras adicionais
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirecionar wp-content, wp-admin e wp-includes para seus respectivos diretórios
+RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+
+# Se a solicitação terminar com .php, pare o processamento de regras adicionais
+RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+
+# Redirecionar quaisquer outras solicitações para index.php
+RewriteRule . index.php [L]
