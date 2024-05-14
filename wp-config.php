@@ -46,6 +46,19 @@ define( 'AS3CF_SETTINGS', serialize( array(
 	'bucket' => 'WP_S3_BUCKET'
 ) ) );
 
+define('FORCE_SSL', true);
+define('FORCE_SSL_ADMIN',true);
+$_SERVER['HTTPS']='on';
+
+/* Multisite */
+define( 'WP_ALLOW_MULTISITE', true );
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'gain.adventistas.org');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+
 /**#@+
  * Chaves únicas de autenticação e salts.
  *
@@ -73,36 +86,27 @@ define( 'NONCE_SALT',       'QG^i@H99%a4aiUA4vKnRO/UT;_kcWAcCC&]D2.J_cQIk }<_UqK
 /**
  * Prefixo da tabela do banco de dados do WordPress.
  *
- * Você pode ter várias instalações em um único banco de dados se você der
- * um prefixo único para cada um. Somente números, letras e sublinhados!
+ * Você pode ter várias instalações em um único banco de dados se você der para cada um um único
+ * prefixo. Somente números, letras e sublinhados!
  */
-$table_prefix = 'wp_';
+$table_prefix  = 'wp_';
+
 
 /**
- * Para desenvolvedores: Modo de debug do WordPress.
+ * Para desenvolvedores: Modo debugging WordPress.
  *
- * Altere isto para true para ativar a exibição de avisos
- * durante o desenvolvimento. É altamente recomendável que os
- * desenvolvedores de plugins e temas usem o WP_DEBUG
+ * altere isto para true para ativar a exibição de avisos durante o desenvolvimento.
+ * é altamente recomendável que os desenvolvedores de plugins e temas usem o WP_DEBUG
  * em seus ambientes de desenvolvimento.
- *
- * Para informações sobre outras constantes que podem ser utilizadas
- * para depuração, visite o Codex.
- *
- * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
-
-/* Adicione valores personalizados entre esta linha até "Isto é tudo". */
-
-
+define('WP_DEBUG', false);
 
 /* Isto é tudo, pode parar de editar! :) */
 
 /** Caminho absoluto para o diretório WordPress. */
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
-}
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
 
-/** Configura as variáveis e arquivos do WordPress. */
-require_once ABSPATH . 'wp-settings.php';
+/** Configura as variáveis do WordPress e arquivos inclusos. */
+require_once(ABSPATH . 'wp-settings.php');
+
