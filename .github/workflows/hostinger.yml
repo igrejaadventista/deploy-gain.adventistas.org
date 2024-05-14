@@ -14,6 +14,9 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
 
+    - name: Check wp-config.php
+      run: ls -la ./wp-config.php
+
     - name: Transform wp-config.php
       run: |
         echo "Init transform: wp-config.php"
@@ -24,7 +27,7 @@ jobs:
         sed -i "s#AWS_S3_ACCESS_KEY#${{ secrets.AWS_S3_ACCESS_KEY }}#g" ./wp-config.php
         sed -i "s#AWS_S3_SECRET_KEY#${{ secrets.AWS_S3_SECRET_KEY }}#g" ./wp-config.php
         sed -i "s#WP_S3_BUCKET#${{ secrets.WP_S3_BUCKET }}#g" ./wp-config.php
-        echo "End transform: wp-config.php"
+        echo "End transform: wp-config.php"      
     - name: Deploy to Server - SSH
       uses: easingthemes/ssh-deploy@main
       with:
