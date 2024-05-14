@@ -29,11 +29,10 @@ jobs:
       uses: easingthemes/ssh-deploy@main
       with:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        # ARGS: -avzr --delete
+        ARGS: -avzr --delete
         SOURCE: "./app/"
         REMOTE_HOST: ${{ secrets.FTP_HOST }}
         REMOTE_PORT: 65002
         REMOTE_USER: ${{ secrets.FTP_USER }}
         TARGET: "/home/${{ secrets.FTP_USER }}/domains/${{ secrets.SITE_DOMAIN }}/public_html"
         EXCLUDE: "/dist/, /node_modules/"       
-
